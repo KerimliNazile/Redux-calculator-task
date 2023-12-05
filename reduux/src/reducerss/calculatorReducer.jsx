@@ -10,16 +10,17 @@ export const counterSlice = createSlice({
   reducers: {
     increment: (state,action) => {
 
-      state.value += action.payload
+      
+      state.value= action.payload.num1+action.payload.num2
     },
     decrement: (state,action) => {
-      state.value -= action.payload
+      state.value = action.payload.num1-action.payload.num2
     },
     multiply:(state,action)=>{
-        state.value *= action.payload
+        state.value = action.payload.num1*action.payload.num2
     },
     divide:(state,action)=>{
-        state.value /= action.payload
+        state.value = action.payload.num1/action.payload.num2
     }
   },
 })

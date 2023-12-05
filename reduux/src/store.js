@@ -7,6 +7,6 @@ export const store = configureStore({
     reducer:{
         counter:counterReducer,
         todos:todoListReducer,
-        calculator:calculatorReducer
+        // calculator:calculatorReducer
     }
 })
